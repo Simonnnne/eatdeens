@@ -1,0 +1,235 @@
+body {
+    background-color: #ffffff;
+    font-family: "ocr-a-std", monospace; /* Adjust this to match your site’s font */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #444;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* General styling for the menu button */
+#menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed; /* Position it fixed to the top left */
+    top: 20px;       /* 20px from the top of the page */
+    left: 20px;      /* 20px from the left side of the page */
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;   /* Keeps the button above other content */
+}
+
+
+/* Sidebar styling */
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* Links inside the sidebar */
+#sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When hovering over links inside the sidebar */
+#sidebar a:hover {
+    color: #f1f1f1;
+}
+
+/* Style the close button (X) */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+/* Media query for small screens */
+@media screen and (max-height: 450px) {
+    #sidebar {padding-top: 15px;}
+    #sidebar a {font-size: 18px;}
+}
+
+
+
+/* Style for the header and logo */
+header {
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    padding: 20px;
+    background-color: #fff;
+}
+
+#site-logo {
+    max-width: 150px; /* Adjust the size of the logo as needed */
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between columns */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Left column styling */
+#left-column {
+    flex: 0.8;
+    padding: 20px;
+    text-align: left;
+    background-color: #fffbf0; /* Light blue background color */
+    border-radius: 10px; /* Rounds the corners of the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border: 2px solid #ccc; /* Optional: adds a border around the box */
+}
+
+/* Fun Facts Box Styling */
+#fun-facts-box {
+    margin-top: 20px; /* Space between the left column content and this box */
+    padding: 20px;
+    background-color: #ffffff; /* Light sandy color for a playful look */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%; /* Ensure it takes up the full width of the left column */
+    border: 2px solid #ccc;
+}
+
+#fun-fact {
+    font-size: 1.2em; /* Slightly larger text for readability */
+    margin-bottom: 10px;
+}
+
+#next-fact {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#next-fact:hover {
+    background-color: #555; /* Slightly lighter on hover */
+}
+
+#right-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exploded-view {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#sardine-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.sardine-part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease;
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    object-fit: contain; /* Ensure the image fits well within the bounding box */
+    pointer-events: all; /* Make sure the clickable area is active */
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Divider Styling */
+#divider {
+    height: 100px; /* Increase height for more spacing */
+    background-color: #ffffff; /* Contrasting color */
+    margin-top: 40px; /* Additional space from the section above */
+}
+
+/* New section styling */
+#new-section {
+    padding: 60px 20px; /* Adds padding around the content */
+    background: linear-gradient(135deg, #ffcc33, #ff6699); /* Gradient background */
+    color: #fff;
+    text-align: center;
+    min-height: 400px;
+    width: 100%; /* Ensures the section spans the full width of the page */
+    margin-top: 50px; /* Extra space at the top for separation */
+}

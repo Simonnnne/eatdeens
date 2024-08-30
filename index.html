@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EATDEENS - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   
+    <!-- Header with Logo -->
+    <header>
+        <img src="assets/logo.png" alt="EATDEENS Logo" id="site-logo">
+    </header>
+
+     <!-- Button to open the sidebar -->
+     <button id="menu-btn">☰</button>
+
+     <!-- The Sidebar -->
+     <div id="sidebar">
+         <a href="javascript:void(0)" id="close-btn" class="close-btn">&times;</a>
+         <a href="deen-reviews.html">Deen Reviews</a>
+         <a href="deen-health.html">Deen Health Benefits</a>
+         <a href="deens-sustainability.html">Deens and Sustainability</a>
+         <a href="deen-menu.html">Deen Menu</a>
+     </div>
+ 
+    <main>
+        <div id="left-column">
+            <h2>Sardine Tin Anatomy</h2>
+            <p id="description">Click on the parts of the sardine tin to learn more about its anatomy.</p>
+    
+            <!-- New Row for Fun Facts under the left column -->
+            <div id="fun-facts-box" class="fun-facts">
+                <p id="fun-fact">Did you know? Sardines are named after the Mediterranean island of Sardinia, where they were once abundant!</p>
+                <button id="next-fact">Next Fun Fact</button>
+            </div>
+        </div>
+    
+        <div id="right-column">
+            <section id="exploded-view">
+                <div id="sardine-container">
+                    <img src="assets/pixel-art/tin-base.PNG" id="tin-base" class="sardine-part" alt="Tin Base">
+                    <img src="assets/pixel-art/oil-layer.PNG" id="oil-layer" class="sardine-part" alt="Oil Layer">
+                    <img src="assets/pixel-art/sardine.PNG" id="sardine" class="sardine-part" alt="Sardine">
+                    <img src="assets/pixel-art/tin-lid.PNG" id="tin-lid" class="sardine-part" alt="Tin Lid">
+                </div>
+            </section>
+        </div>
+
+ 
+
+    </main>
+    
+<!-- Decorative Divider -->
+<div id="divider"></div>
+
+<!-- New distinct section with a different background -->
+   <section id="new-section">
+    <h2>Discover More About Sardines</h2>
+    <p>Scroll down to explore more interesting facts and recipes about sardines. This section introduces new content that feels like a separate page.</p>
+    <!-- Add more content as needed -->
+</section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
